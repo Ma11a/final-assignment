@@ -25,29 +25,38 @@ body {
 }
 
 header {
+    height: 35px;
     display: flex;
     background-color: black;
     justify-content: space-between;
     align-items: center;
     padding: 0px 5px;
+}
 
-
+a {
+    text-decoration: none;
 }
 
 .header-right {
+    font-size: 15px;
     display: flex;
+    margin-right: 10px;
 }
 
 .header-logo a {
+    font-size: 15px;
     display: flex;
     font-family: 'Forestine';
     color: #FFABBE;
+    margin-left: 5px;
 }
 
 .header-cv a {
+    font-size: 15px;
     display: flex;
     color: #ffffff;
     font-family: 'Forestine';
+    margin-left: 300%;
 }
 
 .header-right a {
@@ -55,42 +64,102 @@ header {
     font-family: 'Forestine';
 }
 
+header a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    bottom: -3px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: all 0.3s ease-in-out;
+}
+
+header a:hover::after {
+    transform: scale(1, 1);
+}
+
+
 h6 {
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-left: 20px;
+
     color: black;
 }
 
 h5 {
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-left: 20px;
     color: black;
 }
 
 h1 {
     /* font-family: 'Sofia Sans', sans-serif; */
-    font-family: 'Aboreto', cursive;
+    /*font-family: 'Aboreto', cursive;*/
     font-size: 200px;
     color: #FAFF00;
     padding: 100px 20px;
 }
 
+p {
+    padding-left: 20px;
+}
+
 .about {
-    margin-right: 7px;
+    margin-right: 15px;
 }
 
 .firstdiv-bg {
     height: 100vh;
-    background-image: url(../images/Rectangle\ 6.jpg);
+    background-image: url(../images/Rectangle\ 6.svg);
 }
 
-img {
-    width: 400px;
+/*.colproject1 {
+    width: 300px;
     height: 400px;
-    object-fit: cover;
     margin-top: 57px;
 }
 
-.project1 {}
+.img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+.container {
+    display: flex;
+    align-content: space-between;
+}
+
+
+img.project1 {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-left: 10px;
+
+}
+
+img.project2 {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+img.project3 {
+    margin-top: 50px;
+    max-width: 100%;
+    margin-left: 10px;
+
+}
+
+img.footer-text {
+    display: block;
+    position: relative;
+}
