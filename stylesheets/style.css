@@ -46,7 +46,6 @@ a {
 .header-logo a {
     font-size: 15px;
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
     color: #FFABBE;
     margin-left: 5px;
 }
@@ -55,13 +54,14 @@ a {
     font-size: 15px;
     display: flex;
     color: #ffffff;
-    font-family: :'Courier New', Courier, monospace;
+    font-weight: bold;
     margin-left: 300%;
 }
 
 .header-right a {
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
 }
 
 header a::after {
@@ -87,4 +87,12 @@ header a:hover::after {
     overflow: hidden;
 }
 
-#bgvideo {}
+.angel_content {
+    position: absolute;
+    top: 40vh;
+    left: 100px;
+}
+
+.projects a {
+    margin-right: 7px;
+}
